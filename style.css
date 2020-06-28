@@ -144,21 +144,22 @@ footer {
 	}
 
 	.header-logo {
-		margin-left: none;
-		margin: 1em 0em;
+		margin:0;
+		margin-bottom: 1em;
 	}
 
 	nav ul {
-        display: flex;
-        justify-content: space-evenly;
+		flex-direction: column;
+		text-align: center;
+		margin:0;
+		margin-bottom: 3em;
+        justify-content: space-between;
         border: solid 1px black;
 		margin: auto;
 	}
 	nav a {
-		/* margin:0em 1em; */
-		
-		text-decoration: none;
-		font-weight: 600;
+		white-space: normal;
+		margin-bottom: 1em;
 	}
 }
 
@@ -189,6 +190,7 @@ footer {
 	}
 	.mypic {
 		width: 16rem;
+		min-width: 100px;
 		margin: 1em auto;
 	}
 }

@@ -1,0 +1,188 @@
+/* Typography */
+
+h2 {
+	font-size: 1rem;
+}
+
+/* Layout */
+
+body {
+	font-size: 1rem;
+	font-weight: 400;
+	font-family: Work Sans;
+	margin: 0;
+	background-color: #fff;
+}
+
+.container {
+	display: flex;
+	margin: auto;
+	width: 90%;
+}
+
+.navcontainer {
+	padding: 2em 1em 0em 0em;
+	display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+	align-items: center;
+}
+
+.header-logo {
+	margin: auto;
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	list-style-type: none;
+	padding-left: 0em;
+    align-items: center;
+	font-weight: 400;
+}
+
+nav li {   
+    margin-bottom: 1rem;
+}
+nav a {
+    text-decoration: none;    
+    color: black;
+}
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin: auto;
+}
+
+.intro-left h1 {
+	font-size: 2rem;
+	font-weight: 500;
+	text-align: center;
+	/* border: solid 2px black ; */
+}
+
+.projects-button {
+	margin-top: 1em;
+	background-color: rgb(255, 255, 255);
+	color: black;
+	font-family: work sans;
+	font-size: 1rem;
+	font-weight: 500;
+	text-decoration: none;
+	width: 10em;
+	height: 3em;
+	border: solid 0.1rem black;
+	border-radius: 5px;
+}
+
+.hire-me {
+	margin-top: 1em;
+	background-color: black;
+	color: white;
+	font-family: work sans;
+	font-size: 1rem;
+	font-weight: 500;
+	text-decoration: none;
+	width: 10em;
+	height: 3em;
+	border: solid 0.1rem black;
+	border-radius: 5px;
+}
+
+.projects-button:hover,
+:focus {
+	background-color: blue;
+	color: #fff;
+	font-family: work sans;
+	transition-duration: 300ms;
+}
+
+.hire-me:hover,
+:focus {
+	background-color: blue;
+	color: #fff;
+	font-family: work sans;
+	transition-duration: 300ms;
+}
+
+.mypic {
+    padding-top: 1em;
+	order: -1;
+	width: 300px;
+	margin: auto;
+}
+
+footer {
+	background-color: rgb(248, 248, 248);
+	margin: 1em 0em;
+	padding: 1em 0em;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	margin: auto;
+}
+
+@media (min-width: 675px) {
+	.navcontainer {
+		margin: auto;
+		padding: 2em 5%;
+		width: 90%;
+		flex-direction: row;
+		justify-content: space-between;
+		/* border: solid 1px red; */
+	}
+
+	.header-logo {
+		margin: 0;
+		/* border: solid 1px orange; */
+	}
+
+	nav ul {
+		margin: 0;
+		flex-direction: row;
+		text-align: right;
+		/* border: solid 1px black; */
+	}
+	nav a {
+		white-space: normal;
+		margin-left: 2em;
+    }
+
+   
+}
+
+@media (min-width:988px){
+     .container{
+        /* border: solid 1px black; */
+        width: 80%;
+    }
+    .intro{
+        flex-direction: row;
+        /* justify-content: space-between; */
+        border: solid 1px black;
+    }
+    .intro-left{
+        width: 50%;
+        border: solid 1px yellow;
+
+        /* padding-top: 2rem; */
+    }
+    .intro h1{
+        font-size: 2.5rem;
+        text-align: left;
+
+    }
+	.mypic {
+        border: solid 1px red;
+		order: 0;
+        width: 25rem;
+        align-self: flex-end ;
+	}
+}
