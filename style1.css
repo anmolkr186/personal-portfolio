@@ -1,13 +1,9 @@
 /* Typography */
 
-h2 {
-	font-size: 1rem;
-}
-
 /* Layout */
 
 body {
-	font-size: 1rem;
+	font-size: 1.125rem;
 	font-weight: 400;
 	font-family: Work Sans;
 	margin: 0;
@@ -16,15 +12,26 @@ body {
 
 .container {
 	display: flex;
+	width: 90%;width: 90%;
 	margin: auto;
-	width: 90%;
+	max-width: 1400px;
+}
+
+.grey-container {
+	background-color: rgb(243, 243, 243);
+	padding: 4em 0em;
+}
+
+.white-container {
+	background-color: white;
+	padding: 4em 0em;
 }
 
 .navcontainer {
 	padding: 2em 1em 0em 0em;
 	display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+	flex-direction: column;
+	justify-content: space-evenly;
 	align-items: center;
 }
 
@@ -40,33 +47,48 @@ nav ul {
 	justify-content: space-between;
 	list-style-type: none;
 	padding-left: 0em;
-    align-items: center;
+	align-items: center;
 	font-weight: 400;
 }
 
-nav li {   
-    margin-bottom: 1rem;
+nav li {
+	margin-bottom: 1rem;
 }
+
 nav a {
-    text-decoration: none;    
-    color: black;
+	text-decoration: none;
+	color: black;
+	border-bottom: 2px rgba(255, 255, 255, 0) solid;
+
+}
+
+nav a:hover {
+	margin-bottom: 1rem;
+	padding-bottom: 0.5em;
+	border-bottom: 2px black solid;
+	transition-duration: 200ms;
 }
 .intro {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin: auto;
+	align-items: center;
 }
 
 .intro-left h1 {
 	font-size: 2rem;
 	font-weight: 500;
 	text-align: center;
+	margin-bottom: 1em;
 	/* border: solid 2px black ; */
 }
 
+.btncontainer {
+	margin: 2em 0em;
+	
+}
 .projects-button {
-	margin-top: 1em;
+	margin: 0.5em 0em;
 	background-color: rgb(255, 255, 255);
 	color: black;
 	font-family: work sans;
@@ -80,7 +102,7 @@ nav a {
 }
 
 .hire-me {
-	margin-top: 1em;
+	margin: 0.5em 0em;
 	background-color: black;
 	color: white;
 	font-family: work sans;
@@ -93,16 +115,14 @@ nav a {
 	border-radius: 5px;
 }
 
-.projects-button:hover,
-:focus {
+.projects-button:hover,:focus {
 	background-color: blue;
 	color: #fff;
 	font-family: work sans;
 	transition-duration: 300ms;
 }
 
-.hire-me:hover,
-:focus {
+.hire-me:hover,:focus {
 	background-color: blue;
 	color: #fff;
 	font-family: work sans;
@@ -110,10 +130,39 @@ nav a {
 }
 
 .mypic {
-    padding-top: 1em;
+	padding-top: 1em;
 	order: -1;
-	width: 300px;
-	margin: auto;
+	width: 100%;
+	max-width: 450px;
+}
+
+.con-flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.con-flex h1 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	text-align: center;
+}
+
+.con-flex img {
+	width: 90%;
+	max-width: 700px;
+	order: -1;
+}
+
+.con-flex p{
+	margin: 2em 0em;
+}
+.con-flex a{
+	text-decoration: none;
+	color: black;
+	padding-bottom: 0.5em;
+	border-bottom: 2px black solid;
 }
 
 footer {
@@ -127,6 +176,12 @@ footer {
 	justify-content: space-between;
 	width: 80%;
 	margin: auto;
+}
+
+.headings {
+	text-align: center;
+	font-weight: 600;
+	margin: 2em 0em;
 }
 
 @media (min-width: 675px) {
@@ -153,36 +208,61 @@ footer {
 	nav a {
 		white-space: normal;
 		margin-left: 2em;
-    }
-
-   
+	}
 }
 
-@media (min-width:988px){
-     .container{
-        /* border: solid 1px black; */
-        width: 80%;
-    }
-    .intro{
-        flex-direction: row;
-        /* justify-content: space-between; */
-        border: solid 1px black;
-    }
-    .intro-left{
-        width: 50%;
-        border: solid 1px yellow;
+@media (min-width: 988px) {
+	.container {
+		/* border: solid 1px black; */
+		width: 80%;
+	}
+/* 
+	.grey-container {
+		min-height: 70vh;
+	}
 
-        /* padding-top: 2rem; */
-    }
-    .intro h1{
-        font-size: 2.5rem;
-        text-align: left;
-
-    }
+	.white-container {
+		min-height: 70vh;
+	} */
+	.intro {
+		flex-direction: row;
+		justify-content: space-between;
+		/* border: solid 1px black; */
+	}
+	.intro-left {
+		width: 50%;
+		/* border: solid 1px yellow; */
+		/* padding-top: 2rem; */
+	}
+	.intro h1 {
+		font-size: 2.5rem;
+		text-align: left;
+	}
 	.mypic {
-        border: solid 1px red;
+		/* border: solid 1px red; */
 		order: 0;
-        width: 25rem;
-        align-self: flex-end ;
+	}
+
+	.con-flex {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 2em 0em;
+	}
+	.con-flex .content {
+		width: 45%;
+	}
+
+	.con-flex img {
+		width: 50%;
+		max-width: 500px;
+		order: 0;
+	}
+	.con-flex h1 {
+		/* margin-top: 2em; */
+		text-align: left;
+		font-size: 2rem;
+		padding-bottom: 1rem;
 	}
 }
