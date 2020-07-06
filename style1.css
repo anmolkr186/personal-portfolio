@@ -181,7 +181,7 @@ footer {
 .headings {
 	text-align: center;
 	font-weight: 600;
-	margin: 2em 0em;
+	margin-top: 2em;
 }
 
 @media (min-width: 675px) {
