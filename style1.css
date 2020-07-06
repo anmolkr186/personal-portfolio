@@ -212,6 +212,9 @@ footer {
 }
 
 @media (min-width: 988px) {
+	body {
+	font-size: 1.125rem;
+	}
 	.container {
 		/* border: solid 1px black; */
 		width: 80%;
