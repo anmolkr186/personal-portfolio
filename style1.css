@@ -7,13 +7,17 @@ body {
 	font-weight: 400;
 	font-family: 'Work Sans', sans-serif;
 	margin: 0;
+	padding: 0;
 	background-color: #fff;
 }
 
 p {
 	line-height: 1.2;
 }
-
+*::selection{
+	background-color: blue;
+	color: #fff;
+}
 .fas{
 	opacity: 0.5;
 	transform: translate(0px,0px);
@@ -191,16 +195,44 @@ nav a:hover {
 }
 
 footer {
-	background-color: rgb(248, 248, 248);
-	margin: 1em 0em;
+	background-color: rgb(236, 236, 236);
 	padding: 1em 0em;
 }
 
 .footer-container {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
-	width: 80%;
+	align-items: center;
 	margin: auto;
+}
+
+.footer-left{
+	text-align: center;
+}
+
+.footer-right{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	order:-1;
+}
+
+.social-media > *{
+	margin:0em 0.5em;
+}
+
+.footer-right .fab{
+	font-size:2rem;
+	opacity: 0.5;
+	transition: ease all 200ms;
+	color: black;
+}
+
+.footer-right .fab:hover{
+	opacity: 1;
+	transition: ease all 200ms;
 }
 
 .headings {
@@ -294,4 +326,18 @@ footer {
 		font-size: 2rem;
 		padding-bottom: 1rem;
 	}
+		
+	.footer-container {
+		flex-direction: row;	
+	}
+	
+	.footer-right{
+		order:0;
+		flex-direction: row;
+	}
+
+	.follow-me{
+		margin-right:1em;
+	}
+
 }
