@@ -14,9 +14,20 @@ p {
 	line-height: 1.2;
 }
 
+.fas{
+	opacity: 0.5;
+	transform: translate(0px,0px);
+	margin-left: 0.5em;
+}
+/* 
+.fas:hover,focus{
+	opacity: 1;
+	transform: translate(5px,0px);
+	transition-duration: 300ms;
+} */
 .container {
 	display: flex;
-	width: 90%;width: 90%;
+	width: 90%;
 	margin: auto;
 	max-width: 1400px;
 }
@@ -166,8 +177,17 @@ nav a:hover {
 .con-flex a{
 	text-decoration: none;
 	color: black;
-	padding-bottom: 0.5em;
+	padding-bottom: 0.4em;
 	border-bottom: 2px black solid;
+	transition: all ease 200ms;
+}
+
+.con-flex a:hover{
+	text-decoration: none;
+	color: black;
+	padding-bottom: 0.7em;
+	border-bottom: 2px black solid;
+	transition: all ease 200ms;
 }
 
 footer {
