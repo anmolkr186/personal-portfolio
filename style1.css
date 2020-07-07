@@ -10,6 +10,10 @@ body {
 	background-color: #fff;
 }
 
+p {
+	line-height: 1.2;
+}
+
 .container {
 	display: flex;
 	width: 90%;width: 90%;
@@ -59,6 +63,7 @@ nav a {
 	text-decoration: none;
 	color: black;
 	border-bottom: 2px rgba(255, 255, 255, 0) solid;
+	-webkit-tap-highlight-color: transparent;
 
 }
 
@@ -219,6 +224,7 @@ footer {
 		/* border: solid 1px black; */
 		width: 80%;
 	}
+		
 /* 
 	.grey-container {
 		min-height: 70vh;
