@@ -3,17 +3,18 @@
 /* Layout */
 
 body {
-	font-size: 1.5rem;
+	font-size: 1.125rem;
 	font-weight: 400;
 	font-family: "Work Sans", sans-serif;
 	margin: 0;
 	padding: 0;
 	background-color: #fff;
-	color: rgb(43, 43, 43);
+	color: rgb(68, 68, 68);
 }
 
 p {
 	line-height: 1.5rem;
+	color: rgb(88, 88, 88);
 }
 
 *::selection {
@@ -34,7 +35,7 @@ p {
 }
 
 .grey-container {
-	background-color: rgba(80, 80, 80, 0.055);
+	background-color: rgb(246, 247, 255);
 	padding: 4em 0em;
 }
 
@@ -53,7 +54,7 @@ p {
 
 .header-logo {
 	margin: auto;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	font-weight: 700;
 }
 
@@ -119,7 +120,7 @@ nav a:hover {
 
 .hire-me {
 	margin: 0.5em 0em;
-	background-color: rgb(85, 96, 117);
+	background-color: rgb(68, 76, 92);
 	color: white;
 	font-family: work sans;
 	font-size: 1rem;
@@ -193,7 +194,7 @@ nav a:hover {
 }
 
 footer {
-	background-color: rgba(80, 80, 80, 0.055);
+	background-color: rgb(246, 247, 255);
 	padding: 1em 0em;
 }
 
@@ -241,7 +242,7 @@ footer a {
 .headings {
 	text-align: center;
 	font-weight: 500;
-	margin-top: 2em;
+	padding: 0.5em 0em;
 }
 
 @media (min-width: 675px) {
@@ -312,7 +313,7 @@ footer a {
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: flex-start;
-		padding: 2em 0em;
+		padding: 1em 0em;
 	}
 	.con-flex .content {
 		width: 45%;
@@ -327,7 +328,7 @@ footer a {
 		/* margin-top: 2em; */
 		text-align: left;
 		font-size: 2rem;
-		padding-bottom: 1rem;
+		/* padding-bottom: 0.5em; */
 	}
 
 	.footer-container {
