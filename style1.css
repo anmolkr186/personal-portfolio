@@ -141,7 +141,7 @@ nav a:hover {
 
 .hire-me:hover,
 :focus {
-	background-color: rgb(114, 96, 96);
+	background-color: rgb(43, 43, 43);
 	color: #fff;
 	font-family: work sans;
 	transition-duration: 300ms;
