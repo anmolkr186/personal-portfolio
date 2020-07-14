@@ -3,32 +3,29 @@
 /* Layout */
 
 body {
-	font-size: 1.125rem;
+	font-size: 1.5rem;
 	font-weight: 400;
-	font-family: 'Work Sans', sans-serif;
+	font-family: "Work Sans", sans-serif;
 	margin: 0;
 	padding: 0;
 	background-color: #fff;
+	color: rgb(43, 43, 43);
 }
 
 p {
-	line-height: 1.2;
+	line-height: 1.5rem;
 }
-*::selection{
-	background-color: blue;
+
+*::selection {
+	background-color: rgb(48, 40, 80);
 	color: #fff;
 }
-.fas{
+.fas {
 	opacity: 0.5;
-	transform: translate(0px,0px);
+	transform: translate(0px, 0px);
 	margin-left: 0.5em;
 }
-/* 
-.fas:hover,focus{
-	opacity: 1;
-	transform: translate(5px,0px);
-	transition-duration: 300ms;
-} */
+
 .container {
 	display: flex;
 	width: 90%;
@@ -37,7 +34,7 @@ p {
 }
 
 .grey-container {
-	background-color: rgb(243, 243, 243);
+	background-color: rgba(80, 80, 80, 0.055);
 	padding: 4em 0em;
 }
 
@@ -79,7 +76,6 @@ nav a {
 	color: black;
 	border-bottom: 2px rgba(255, 255, 255, 0) solid;
 	-webkit-tap-highlight-color: transparent;
-
 }
 
 nav a:hover {
@@ -105,8 +101,8 @@ nav a:hover {
 
 .btncontainer {
 	margin: 2em 0em;
-	
 }
+
 .projects-button {
 	margin: 0.5em 0em;
 	background-color: rgb(255, 255, 255);
@@ -117,13 +113,13 @@ nav a:hover {
 	text-decoration: none;
 	width: 10em;
 	height: 3em;
-	border: solid 0.1rem black;
+	border: solid 0.05rem rgb(80, 80, 80);
 	border-radius: 5px;
 }
 
 .hire-me {
 	margin: 0.5em 0em;
-	background-color: black;
+	background-color: rgb(85, 96, 117);
 	color: white;
 	font-family: work sans;
 	font-size: 1rem;
@@ -131,19 +127,21 @@ nav a:hover {
 	text-decoration: none;
 	width: 10em;
 	height: 3em;
-	border: solid 0.1rem black;
+	border: solid 0.05rem rgb(153, 153, 153);
 	border-radius: 5px;
 }
 
-.projects-button:hover,:focus {
-	background-color: blue;
+.projects-button:hover,
+:focus {
+	background-color: rgb(43, 43, 43);
 	color: #fff;
 	font-family: work sans;
 	transition-duration: 300ms;
 }
 
-.hire-me:hover,:focus {
-	background-color: blue;
+.hire-me:hover,
+:focus {
+	background-color: rgb(114, 96, 96);
 	color: #fff;
 	font-family: work sans;
 	transition-duration: 300ms;
@@ -175,10 +173,10 @@ nav a:hover {
 	order: -1;
 }
 
-.con-flex p{
+.con-flex p {
 	margin: 2em 0em;
 }
-.con-flex a{
+.con-flex a {
 	text-decoration: none;
 	color: black;
 	padding-bottom: 0.4em;
@@ -186,7 +184,7 @@ nav a:hover {
 	transition: all ease 200ms;
 }
 
-.con-flex a:hover{
+.con-flex a:hover {
 	text-decoration: none;
 	color: black;
 	padding-bottom: 0.7em;
@@ -195,11 +193,16 @@ nav a:hover {
 }
 
 footer {
-	background-color: rgb(236, 236, 236);
+	background-color: rgba(80, 80, 80, 0.055);
 	padding: 1em 0em;
 }
 
+footer a {
+	text-decoration: underline;
+	color: rgb(75, 75, 75);
+}
 .footer-container {
+	padding: 1em 0em;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -207,37 +210,37 @@ footer {
 	margin: auto;
 }
 
-.footer-left{
+.footer-left {
 	text-align: center;
 }
 
-.footer-right{
+.footer-right {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	order:-1;
+	order: -1;
 }
 
-.social-media > *{
-	margin:0em 0.5em;
+.social-media > * {
+	margin: 0em 0.5em;
 }
 
-.footer-right .fab{
-	font-size:2rem;
+.footer-right .fab {
+	font-size: 1.5rem;
 	opacity: 0.5;
 	transition: ease all 200ms;
-	color: black;
+	color: rgb(85, 96, 117);
 }
 
-.footer-right .fab:hover{
+.footer-right .fab:hover {
 	opacity: 1;
 	transition: ease all 200ms;
 }
 
 .headings {
 	text-align: center;
-	font-weight: 600;
+	font-weight: 500;
 	margin-top: 2em;
 }
 
@@ -270,14 +273,14 @@ footer {
 
 @media (min-width: 988px) {
 	body {
-	font-size: 1.125rem;
+		font-size: 1.125rem;
 	}
 	.container {
 		/* border: solid 1px black; */
 		width: 80%;
 	}
-		
-/* 
+
+	/* 
 	.grey-container {
 		min-height: 70vh;
 	}
@@ -326,18 +329,17 @@ footer {
 		font-size: 2rem;
 		padding-bottom: 1rem;
 	}
-		
+
 	.footer-container {
-		flex-direction: row;	
-	}
-	
-	.footer-right{
-		order:0;
 		flex-direction: row;
 	}
 
-	.follow-me{
-		margin-right:1em;
+	.footer-right {
+		order: 0;
+		flex-direction: row;
 	}
 
+	.follow-me {
+		margin-right: 1em;
+	}
 }
