@@ -18,8 +18,8 @@ p {
 }
 
 *::selection {
-	background-color: rgb(48, 40, 80);
-	color: #fff;
+	background-color: rgb(213, 216, 255);
+	/* color: #fff; */
 }
 .fas {
 	opacity: 0.5;
@@ -191,6 +191,32 @@ nav a:hover {
 	padding-bottom: 0.7em;
 	border-bottom: 2px black solid;
 	transition: all ease 200ms;
+}
+
+.view-all{
+	padding-bottom: 3em;
+}
+.view-all-projects{
+	margin: auto;
+	background-color: rgb(246, 247, 255);
+	color: rgb(73, 73, 73);
+	font-family: work sans;
+	font-size: 1rem;
+	font-weight: 500;
+	text-decoration: none;
+	width: 10em;
+	height: 3em;
+	border: solid 2px rgb(226, 229, 255);
+	border-radius: 100px;
+	transition-duration: 300ms;
+
+}
+
+.view-all-projects:hover,:focus{
+	background-color: rgb(229, 232, 255);
+	transition-duration: 300ms;
+
+
 }
 
 footer {
