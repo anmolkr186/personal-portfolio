@@ -293,7 +293,7 @@ footer a {
 .project-header-container .mockimg {
 	width: 100%;
 	max-width: 600px;
-	margin: 1em;
+	margin: auto;
 	display: flex;
 	order: -1;
 }
@@ -305,8 +305,8 @@ footer a {
 }
 
 .project-header-container h1 {
-	font-size: 2rem;
-	/* text-align: center; */
+	font-size: 3rem;
+	text-align: center;
 	font-weight: 600;
 }
 
