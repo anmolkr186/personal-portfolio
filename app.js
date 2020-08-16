@@ -21,3 +21,8 @@ for (var i = 0; i < btns.length; i++) {
 		this.className += " active";
 	});
 }
+
+function scrolling() {
+	var elmnt = document.getElementById("work");
+	elmnt.scrollIntoView();
+}

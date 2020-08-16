@@ -1,6 +1,9 @@
 /* Typography */
 
 /* Layout */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
 	font-size: 1em;
@@ -26,6 +29,8 @@ p {
 	background-color: rgb(128, 147, 255);
 	color: white;
 }
+
+
 .fas {
 	opacity: 0.5;
 	transform: translate(0px, 0px);
@@ -50,12 +55,12 @@ p {
 }
 
 .navcontainer {
-	padding: 2em 1em 0em 0em;
+	padding-top: 2em;	
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
-	background-color: rgba(255, 255, 255, 0);
+	/* background-color: white; */
 	position: relative;
 }
 
@@ -67,7 +72,9 @@ p {
 
 .header-logo a {
 	text-decoration: none;
+	margin: 0em;
 	color: black;
+	text-align: left;
 }
 
 nav ul {
@@ -75,19 +82,18 @@ nav ul {
 	/* flex-direction: column; */
 	justify-content: space-between;
 	list-style-type: none;
-	padding-left: 0em;
+	padding: 0em;
 	align-items: center;
 	font-weight: 400;
 }
 
 nav li {
-	margin: 1rem 0.5em;
+	margin: 0.5em;
 }
 
 .nav-links {
 	text-decoration: none;
 	color: black;
-	border-bottom: 2px rgba(255, 255, 255, 0) solid;
 }
 
 .nav-links:hover {
@@ -116,21 +122,25 @@ nav a:hover {
 } */
 .intro {
 	display: flex;
+	height:80vh;
 	flex-direction: column;
-	justify-content: space-between;
+	/* justify-content: space-around; */
 	align-items: center;
+	text-align: center;
+	justify-content: center;
 }
 
-.intro-left h1 {
-	font-size: 2rem;
-	font-weight: 500;
+.intro-content h1 {
+	font-size: 1.5rem;
+	font-weight: 600;
 	text-align: center;
-	margin-bottom: 1em;
+	/* margin-bottom: 1em; */
 	/* border: solid 2px black ; */
 }
 
 .btncontainer {
-	margin: 2em 0em;
+	text-align: center;
+	margin: 1em 0em;
 }
 
 .projects-button {
@@ -141,7 +151,8 @@ nav a:hover {
 	font-size: 1rem;
 	font-weight: 500;
 	text-decoration: none;
-	width: 10em;
+	padding:0em 1em;
+	/* width: 10em; */
 	height: 3em;
 	border: solid 0.05rem rgb(80, 80, 80);
 	border-radius: 5px;
@@ -292,8 +303,9 @@ nav a:hover {
 }
 
 .card {
-	border: 1px rgb(235, 235, 235) solid;
+	border: 0px rgb(235, 235, 235) solid;
 	display: flex;
+	background-color: white ;
 	flex-direction: column;
 	border-radius: 0px;
 	overflow: hidden;
@@ -335,7 +347,7 @@ nav a:hover {
 .card:hover {
 	transform: scale(1.01);
 	transition: all ease-in 200ms;
-	box-shadow: 0px 6px 20px #f5f5f5;
+	box-shadow: 0px 6px 20px #0000000e;
 }
 
 .card-link a:hover {
@@ -493,7 +505,8 @@ footer a {
 }
 
 
-@media (min-width: 675px) {
+@media (min-width: 740px) {
+	
 	.navcontainer {
 		margin: auto;
 		padding: 2em 5%;
@@ -523,31 +536,38 @@ footer a {
 @media (min-width: 988px) {
 	body {
 		font-size: 1.125rem;
+		background-image: url("bg/aaa0.png");
+		background-position: center top;
+		background-repeat: no-repeat;
+
 	}
 	.container {
 		/* border: solid 1px black; */
 		width: 80%;
 	}
 
+
 	.intro {
 		flex-direction: row;
 		justify-content: space-between;
-		/* height: 70vh; */
+		text-align: left;
 		margin-bottom: 2rem;
 		/* border: solid 1px black; */
 	}
-	.intro-left {
+	.intro-content {
 		width: 50%;
-		/* border: solid 1px yellow; */
-		/* padding-top: 2rem; */
 	}
 	.intro h1 {
-		font-size: 2.5rem;
+		font-size: 3rem;
 		text-align: left;
 	}
 	.mypic {
 		/* border: solid 1px red; */
 		order: 0;
+	}
+
+	.btncontainer{
+		text-align:left;
 	}
 
 	.con-flex {
