@@ -145,6 +145,8 @@ nav a:hover {
 .about p{
 	font-size: 1em;
 	line-height:1.6em;
+	text-align: left;
+	text-justify: auto;
 }
 
 .btncontainer {
