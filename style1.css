@@ -6,7 +6,7 @@ html {
 }
 
 body {
-	font-size: 1em;
+	font-size: 1.125em;
 	font-weight: 400;
 	font-family: "Work Sans", sans-serif;
 	margin: 0;
@@ -29,9 +29,17 @@ p {
 	color: rgb(88, 88, 88);
 }
 
+a:focus{
+	background-color: initial;
+    color: blue;
+}
+
+button:focus{
+}
+
 *::selection {
 	background-color: rgb(128, 147, 255);
-	color: white;
+	color: black;
 }
 
 
@@ -49,8 +57,9 @@ p {
 }
 
 .grey-container {
-	background-color: rgb(246, 247, 255);
-	padding: 4em 0em;
+	background-color: rgb(245, 245, 245);
+	padding: 2em;
+	margin-top:2em;
 }
 
 .white-container {
@@ -129,6 +138,20 @@ nav a:hover {
 	min-height:80vh;
 	flex-direction: column;
 	justify-content: space-evenly;
+	/* align-items: center; */
+	text-align: center;
+	/* justify-content: center; */
+}
+
+.intro-header {
+	align-items: center;
+}
+
+.content-header {
+	display: flex;
+	min-height:80vh;
+	flex-direction: column;
+	justify-content: space-evenly;
 	align-items: center;
 	text-align: center;
 	/* justify-content: center; */
@@ -142,6 +165,13 @@ nav a:hover {
 	/* border: solid 2px black ; */
 }
 
+.top-align{
+	align-items: flex-start;
+}
+
+.about h1{
+	padding-top: 1em ;
+}
 .about p{
 	font-size: 1em;
 	line-height:1.6em;
@@ -203,6 +233,7 @@ nav a:hover {
 	padding-top: 1em;
 	order: -1;
 	width: 100%;
+	height: 100%;
 	max-width: 450px;
 }
 
@@ -420,6 +451,28 @@ footer a {
 	transition: ease all 200ms;
 }
 
+
+.contact-icons{
+	margin-top:2em;
+}
+
+.contact-icons img{
+	margin: 0em 0.3em;
+	width:1em;
+	height: auto;
+	font-size: 2rem;
+	/* opacity: 0.5; */
+	transition: ease all 200ms;
+	color: rgb(85, 96, 117);	
+}
+
+.contact-icons i:hover{
+	font-size: 2rem;
+	opacity: 1;
+	transition: ease all 200ms;
+	color: black;	
+}
+
 .headings {
 	text-align: center;
 	font-weight: 500;
@@ -553,7 +606,6 @@ footer a {
 		width: 80%;
 	}
 
-
 	.intro {
 		flex-direction: row;
 		justify-content: space-between;
@@ -561,16 +613,23 @@ footer a {
 		margin-bottom: 2rem;
 		/* border: solid 1px black; */
 	}
-	.intro-content {
-		width: 50%;
-	}
+
 	.intro h1 {
 		font-size: 3rem;
 		text-align: left;
 	}
+	
+	.intro-content {
+		width: 50%;
+	}
+	
 	.mypic {
 		/* border: solid 1px red; */
 		order: 0;
+	}
+
+	.marginTop{
+		margin-top:2em;
 	}
 
 	.btncontainer{
@@ -651,5 +710,9 @@ footer a {
 		margin: auto;
 		width: 80%;
 		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	}
+		
+	.about h1{
+		padding-top: 0em ;
 	}
 }

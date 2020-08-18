@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home </title>
+    <title>Anmol Kumar</title>
     <link rel="icon" href="assets/icon1.svg" type="image/icon type">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style1.css">
-
 </head>
 
 <body id="index">
@@ -23,7 +22,7 @@
                     <li><a class="nav-links" href="index.html" >Work</a></li>
                     <li><a class="nav-links" href="https://drive.google.com/file/d/1yI5QSXsc_yhoxvpDfmTpKlf_N-7X7QHV/view?usp=sharing">Resume</a></li>
                     <li><a class="nav-links" href="about.html">About</a></li>
-                    <li><a class="nav-links" href="#">Contact</a></li>
+                    <li><a class="nav-links" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -35,11 +34,11 @@
 
     <div class="container">
         <section>
-            <div class="intro">
+            <div class="intro intro-header">
                 <img class="mypic home" src="assets/avatar1.svg"></img>
                 <div class="intro-content">
-                    <h1> Hey. I am Anmol Kumar.</h1>
-                    <p>A CS Student by education from IIIT Delhi and a self-taught designer, I am highly motivated to try out new technologies and create immersive user experiences.</p>
+                    <h1> Hey! I am Anmol Kumar.</h1>
+                    <p>A CS + Bio student from IIIT Delhi and a self-taught designer, I am highly motivated to try out new technologies and build innovative and creative products. </p>
 
                     <div class="btncontainer">
                         <button class="projects-button" onclick="scrolling();">Browse my projects</button>
@@ -56,7 +55,7 @@
         <button class="btn active" onclick="filterSelection('all')"> All</button>
         <button class="btn" onclick="filterSelection('dev')"> Development</button>
         <button class="btn" onclick="filterSelection('design')"> Design</button>
-        <button class="btn" onclick="filterSelection('bio')"> Bioinformatics</button>
+        <button class="btn" onclick="filterSelection('bio')"> Bioinformatics + Data Science</button>
         <button class="btn" onclick="filterSelection('other')"> Others</button>
     </div>
 
@@ -79,7 +78,19 @@
                 <h4>Django, MySQL & WebDev</h4>
                 <p>A complete web application as part of DBMS coursework for managing online elections using Django
                     framework, Javascript, jQuery, HTML and CSS.</p>
-                <p class="card-link"><a href="#">See full project<i class="fas fa-long-arrow-alt-right"></i></a></p>
+                <p class="card-link"><a href="https://github.com/anmolkr186/ElectionDB">See full project<i class="fas fa-long-arrow-alt-right"></i></a></p>
+            </div>
+        </div>
+
+        <div class="card filterDiv bio">
+            <img src="assets/influenza-adj.png" />
+            <div class="card-content">
+                <h2>Influenza Viral Sequence Prediction</h2>
+                <h4>ML in Biomedical Applications </h4>
+                <p>Predicting next seasonal influenza virus strain with past datasets and subsequent SNPs using ML methods like
+                    Dense Neural Networks, ARIMA and LSTMs.</p>
+                <p class="card-link"><a href="https://github.com/anmolkr186/Influenza-Viral-Strain-Prediction">See full
+                        project<i class="fas fa-long-arrow-alt-right"></i></a></p>
             </div>
         </div>
 
@@ -102,9 +113,11 @@
                 <h4>Biopython, Tkinter and Selenium</h4>
                 <p>Python GUI API application using BioPython, TKinter and Selenium which predicted the protein
                 sub-localization by sequence analysis using BLAST and WOLF PSORT.</p>
-                <p class="card-link"><a href="#">See full project<i class="fas fa-long-arrow-alt-right"></i></a></p>
+                <p class="card-link"><a href="https://github.com/anmolkr186/WOLF-PSORT-using-BioPython">See full project<i class="fas fa-long-arrow-alt-right"></i></a></p>
             </div>
         </div>
+
+      
 
         <div class="card filterDiv other">
             <img src="assets/wardrobe-adj.png" />
