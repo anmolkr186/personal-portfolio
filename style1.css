@@ -568,6 +568,14 @@ footer a {
 
 }
 
+.next-project{
+	background-color: rgb(246, 247, 255);
+	margin: 2em 0em;
+	padding: 2em 2em;
+	border-radius: 16px;
+	/* width: 80%; */
+}
+
 
 @media (min-width: 740px) {
 	
