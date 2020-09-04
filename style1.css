@@ -573,7 +573,11 @@ footer a {
 	margin: 2em 0em;
 	padding: 2em 2em;
 	border-radius: 16px;
-	/* width: 80%; */
+}
+
+.next-project a{
+	color: rgb(41, 41, 41);
+	text-decoration:none;
 }
 
 
