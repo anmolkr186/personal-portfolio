@@ -20,15 +20,13 @@
                 <ul class="nav-list">
                     <!-- <li><a class="nav-links" href="index.html">Home</a></li> -->
                     <li><a class="nav-links" href="index.html" >Work</a></li>
-                    <li><a class="nav-links" target="_blank" href="https://drive.google.com/file/d/1ugwyoa0MvE4msuf-qCw6BBP_deuJ4U_V/view?usp=sharing">Resume</a></li>
+                    <li><a class="nav-links" target="_blank" href="https://drive.google.com/drive/folders/1iXoMlX5vCy1gM0t6tFipgeBRLmi0RUD1?usp=sharing">Resume</a></li>
                     <li><a class="nav-links" href="about.html">About</a></li>
                     <li><a class="nav-links" href="contact.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-
-
 
     <!-- hero section -->
 
@@ -55,11 +53,40 @@
         <button class="btn active" onclick="filterSelection('all')"> All</button>
         <button class="btn" onclick="filterSelection('dev')"> Development</button>
         <button class="btn" onclick="filterSelection('design')"> Design</button>
-        <button class="btn" onclick="filterSelection('bio')"> Bioinformatics + Data Science</button>
-        <button class="btn" onclick="filterSelection('other')"> Others</button>
+        <button class="btn" onclick="filterSelection('bio')"> Computational Biology</button>
+        <button class="btn" onclick="filterSelection('data-science')"> Data Science</button>
     </div>
 
     <div class="card-container">
+
+        <div class="card filterDiv design dev">
+            <img src="assets/tbsmain.png" />
+            <div class="card-content">
+                <h2>theblockchainschool.io</h2>
+                <h4>UX/UI Design | Development</h4>
+                <p> Complete design overhaul of the main landing website of The Blockchain School.</p>
+                
+                <div style="display: flex; flex-direction: row; justify-content: flex-end;">
+                <p class="card-link"><a style= "margin: 0rem 1rem" href="https://theblockchainschool.io/" target="_blank">Website<i class="fas fa-long-arrow-alt-right"></i></a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card filterDiv design dev">
+            <img src="assets/blockchain.png" />
+            <div class="card-content">
+                <h2>Blockchain Bootcamp</h2>
+                <h4>Full Stack Development</h4>
+                <p> Designed and developed the main landing page of weekly recurring bootcamp which focuses on educating people from all background about blockchain and its applications.</p>
+                
+                <div style="display: flex; flex-direction: row; justify-content: flex-end;">
+                <p class="card-link"><a style= "margin: 0rem 1rem" href="https://bootcamp.theblockchainschool.io/" target="_blank">Website<i class="fas fa-long-arrow-alt-right"></i></a></p>
+                </div>
+            </div>
+        </div>
+        
+       
+
         <div class="card filterDiv design">
             <img src="assets/edudictive-laptop-adj.png" />
             <div class="card-content">
@@ -67,7 +94,26 @@
                 <h4>UI/UX Design</h4>
                 <p>Currently working on designing the front-end of this ed-tech platform which focuses on providing
                     skill-based courses for school and college students.</p>
-                <p class="card-link"><a href="edudictive.html">Read Case Study<i class="fas fa-long-arrow-alt-right"></i></a></p>
+                <p class="card-link"><a href="edudictive.html" target="_blank">Read Case Study<i class="fas fa-long-arrow-alt-right"></i></a></p>
+            </div>
+        </div>
+
+        <div class="card filterDiv data-science">
+            <img src="assets/har.png" />
+            <div class="card-content">
+                <h2>Human Activity Recognition</h2>
+                <h4>Machine Learning, sklearn</h4>
+                <p> Recognizing different human movements and postures and evaluating results using SVM, Logistic Regression,
+                    Random Forest Classifier, SGD, K-means clustering, and GDA and Neural Nets.</p>
+        
+                <div style="display: flex; flex-direction: row; justify-content: flex-end;">
+                    <p class="card-link"><a style="margin: 0rem 1rem"
+                            href="https://drive.google.com/file/d/1WhIO7JphlfBXh7CDFVgQeIwQcbx8ATYt/view?usp=sharing"
+                            target="_blank">Research Paper<i class="fas fa-long-arrow-alt-right"></i></a></p>
+                    <p class="card-link"><a href="https://github.com/anmolkr186/Human_Activity_recognition" target="_blank">See
+                            full
+                            project<i class="fas fa-long-arrow-alt-right"></i></a></p>
+                </div>
             </div>
         </div>
 
@@ -78,7 +124,7 @@
                 <h4>Django, MySQL & WebDev</h4>
                 <p>A complete web application as part of DBMS coursework for managing online elections using Django
                     framework, Javascript, jQuery, HTML and CSS.</p>
-                <p class="card-link"><a href="https://github.com/anmolkr186/ElectionDB">See full project<i class="fas fa-long-arrow-alt-right"></i></a></p>
+                <p class="card-link"><a href="https://github.com/anmolkr186/ElectionDB" target="_blank">See full project<i class="fas fa-long-arrow-alt-right"></i></a></p>
             </div>
         </div>
 
@@ -89,7 +135,7 @@
                 <h4>ML in Biomedical Applications </h4>
                 <p>Predicting next seasonal influenza virus strain with past datasets and subsequent SNPs using ML methods like
                     Dense Neural Networks, ARIMA and LSTMs.</p>
-                <p class="card-link"><a href="https://github.com/anmolkr186/Influenza-Viral-Strain-Prediction">See full
+                <p class="card-link"><a href="https://github.com/anmolkr186/Influenza-Viral-Strain-Prediction" target="_blank">See full
                         project<i class="fas fa-long-arrow-alt-right"></i></a></p>
             </div>
         </div>
@@ -98,14 +144,14 @@
             <img src="assets/pvz-adj.png" />
             <div class="card-content">
                 <h2>Plants vs Zombies Revamped</h2>
-                <h4>Software Dev | JavaFX</h4>
-                <p>Recreated the famous Plants vs Zombies game in JavaFX with custom graphics and features using
-                    Advanced OOP and
-                    multi-threading concepts.</p>
-                <p class="card-link"><a href="#">See full project<i class="fas fa-long-arrow-alt-right"></i></a></p>
+                <h4>Java, JavaFX</h4>
+                <p>Recreated the famous Plants vs Zombies game in JavaFX with custom graphics and features using Advanced OOP and multi-threading concepts.</p>
+                <p class="card-link"><a href="https://github.com/anmolkr186/PlantsVsZombies-Revamped" target="_blank">See full project<i class="fas fa-long-arrow-alt-right"></i></a></p>
             </div>
         </div>
         
+        
+
         <div class="card filterDiv bio">
             <img src="assets/wolf-adj.png" />
             <div class="card-content">
@@ -113,24 +159,10 @@
                 <h4>Biopython, Tkinter and Selenium</h4>
                 <p>Python GUI API application using BioPython, TKinter and Selenium which predicted the protein
                 sub-localization by sequence analysis using BLAST and WOLF PSORT.</p>
-                <p class="card-link"><a href="https://github.com/anmolkr186/WOLF-PSORT-using-BioPython">See full project<i class="fas fa-long-arrow-alt-right"></i></a></p>
+                
+                <p class="card-link"><a href="https://github.com/anmolkr186/WOLF-PSORT-using-BioPython" target="_blank">See full project<i class="fas fa-long-arrow-alt-right"></i></a></p>
             </div>
         </div>
-
-      
-
-        <div class="card filterDiv other">
-            <img src="assets/wardrobe-adj.png" />
-            <div class="card-content">
-                <h2>Wardrobe Assistant</h2>
-                <h4>Engineering Design, Arduino</h4>
-                <p> Daily assistant which automates the process of selecting clothes from your wardrobe by presenting
-                    them according to the time of the day.</p>
-                <p class="card-link"><a href="#">See full project<i class="fas fa-long-arrow-alt-right"></i></a></p>
-            </div>
-        </div>
-
-
 
     </div>
 
