@@ -2,14 +2,49 @@
 <html lang="en">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178917586-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-178917586-1');
+    </script>
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Contact</title>
+    <meta property="title" name="title" content="Contact">
+    <meta property="description" name="description"
+        content="A multidisciplinary developer, designer and data-science enthusiast.">
+    <meta property="author" name="author" content="Anmol Kumar">
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta property="website:author" name="website:author" content="https://anmolkumar.in">
+    
+    <meta name="og:url" property="og:url" content="https://anmolkumar.in" />
+    <meta name="og:type" property="og:type" content="website" />
+    <meta name="og:title" property="og:title" content="Contact" />
+    <meta name="og:description" property="og:description"
+        content="A multidisciplinary developer, designer and data-science enthusiast." />
+    <meta name="og:image" property="og:image" content="/assets/avatar1.svg" />
+    <meta property="og:locale" content="en_IN" />
+    
+    <meta name="twitter:card" content="summary_large_image" /> <!-- <meta name="twitter:card" content="summary" /> -->
+    <meta name="twitter:site" content="@itsandyys" />
+    <meta name="twitter:title" content="Contact" />
+    <meta name="twitter:description"
+        content="A website featuring my recent works as a multidisciplinary developer, designer and data-science enthusiast." />
+    <meta name="twitter:image" content="/assets/avatar1.svg" />
+
+
     <link rel="icon" href="assets/icon1.svg" type="image/icon type">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="style1.css">
 
 </head>
@@ -18,7 +53,7 @@
     <header>
         <nav>
             <div class="navcontainer">
-                <h1 class="header-logo"><a href="index.html">Anmol Kumar</a></h1>
+                <h1 class="header-logo"><a href="index.html"><img src="assets/icon1.svg"></a></h1>
                 <ul class="nav-list">
                     <!-- <li><a class="nav-links" href="index.html">Home</a></li> -->
                     <li><a class="nav-links" href="index.html">Work</a></li>
@@ -34,10 +69,12 @@
 
     <!-- hero section -->
 
-    <div class="container">
+    <div class="container" style="margin-bottom: 2rem;">
         <section>
             <div class="intro">
-                <img class="mypic marginTop" src="assets/contact.svg"></img>
+                <div class="contact-pic-container">
+                    <img class="contact-pic marginTop"  src="assets/chat.png"></img>
+                </div>
                 <div class="about intro-content">
                     <h1>Connect with Me!</h1>
                     <p>If you think I am a good fit for any project or opportunity that will interest me, feel free to contact me. I would love to contribute in the best of my capabilities.</p>

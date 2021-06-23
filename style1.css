@@ -1,40 +1,49 @@
 /* Typography */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400;500;600;700;800&display=swap");
 
 /* Layout */
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
 	font-size: 1.125em;
 	font-weight: 400;
-	font-family: "Work Sans", sans-serif;
+	font-family: "Rubik", sans-serif;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	overflow-x: hidden;
+	background-color: #111;
+	color: white;
 	/* background-image: url("bg/aaa0.png");
 	background-position: top center;
 	background-repeat: no-repeat;
-	background-size: cover; */	
+	background-size: cover; */
 }
 
-#index {
-	background-color: rgb(250, 250, 250);
-	color: rgb(68, 68, 68);
+/* #index {
+
+} */
+
+h1,
+h2 {
+	font-family: "Syne";
+	font-weight: 500;
 }
 
 p {
 	line-height: 1.5rem;
-	color: rgb(88, 88, 88);
+	/* color: rgb(88, 88, 88); */
+	color: #bfbed8;
 }
 
-a:focus{
-	background-color: initial;
-    color: blue;
-}
-
-button:focus{
+a:focus {
+	background-color: transparent;
+	color: blue;
 }
 
 *::selection {
@@ -42,24 +51,23 @@ button:focus{
 	color: black;
 }
 
-
 .fas {
-	opacity: 0.5;
+	/* opacity: ; */
 	transform: translate(0px, 0px);
 	margin-left: 0.5em;
 }
 
 .container {
 	display: flex;
-	width: 90%;
+	width: 100%;
 	margin: auto;
-	max-width: 1400px;
+	max-width: 1440px;
 }
 
 .grey-container {
-	background-color: rgb(245, 245, 245);
+	background-color: #000;
 	padding: 2em;
-	margin-top:2em;
+	margin-top: 2em;
 }
 
 .white-container {
@@ -68,7 +76,7 @@ button:focus{
 }
 
 .navcontainer {
-	padding-top: 2em;	
+	padding-top: 2em;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
@@ -88,6 +96,11 @@ button:focus{
 	margin: 0em;
 	color: black;
 	text-align: left;
+	color: white;
+}
+
+.header-logo img {
+	width: 3.5rem;
 }
 
 nav ul {
@@ -106,13 +119,13 @@ nav li {
 
 .nav-links {
 	text-decoration: none;
-	color: black;
+	color: white;
 }
 
 .nav-links:hover {
 	margin-bottom: 1rem;
 	padding-bottom: 0.5em;
-	border-bottom: 2px black solid;
+	border-bottom: 3px #3300ff solid;
 	transition-duration: 200ms;
 }
 
@@ -135,9 +148,10 @@ nav a:hover {
 } */
 .intro {
 	display: flex;
-	min-height:80vh;
 	flex-direction: column;
-	justify-content: space-evenly;
+	width: 100%;
+	/* min-height:80vh; */
+	justify-content: space-between;
 	/* align-items: center; */
 	text-align: center;
 	/* justify-content: center; */
@@ -149,7 +163,7 @@ nav a:hover {
 
 .content-header {
 	display: flex;
-	min-height:80vh;
+	min-height: 80vh;
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
@@ -157,24 +171,29 @@ nav a:hover {
 	/* justify-content: center; */
 }
 
+.intro-content {
+	min-width: 50%;
+	padding: 0 1rem;
+}
+
 .intro-content h1 {
-	font-size: 1.5rem;
+	font-size: 2.25rem;
 	font-weight: 600;
 	text-align: center;
-	/* margin-bottom: 1em; */
+	margin-bottom: 0.5rem;
 	/* border: solid 2px black ; */
 }
 
-.top-align{
+.top-align {
 	align-items: flex-start;
 }
 
-.about h1{
-	padding-top: 1em ;
+.about h1 {
+	padding-top: 1em;
 }
-.about p{
+.about p {
 	font-size: 1em;
-	line-height:1.6em;
+	line-height: 1.6em;
 	text-align: left;
 	text-justify: auto;
 }
@@ -186,24 +205,25 @@ nav a:hover {
 
 .projects-button {
 	margin: 0.5em 0em;
-	background-color: rgb(255, 255, 255);
-	color: black;
-	font-family: work sans;
-	font-size: 1rem;
+	background-color: #444c5c;
+	color: white;
+	font-family: "Syne";
+	font-size: 1.125rem;
 	font-weight: 500;
-	text-decoration: none;
-	padding:0em 1em;
+	outline: none;
+	border: none;
+	box-shadow: none;
+	padding: 1rem 2rem;
 	/* width: 10em; */
-	height: 3em;
-	border: solid 0.05rem rgb(80, 80, 80);
-	border-radius: 5px;
+	height: auto;
+	width: 100%;
+	border-radius: 3px;
 }
 
 .hire-me {
 	margin: 0.5em 0em;
-	background-color: rgb(68, 76, 92);
+	background-color: #444c5c;
 	color: white;
-	font-family: work sans;
 	font-size: 1rem;
 	font-weight: 500;
 	text-decoration: none;
@@ -215,26 +235,38 @@ nav a:hover {
 
 .projects-button:hover,
 :focus {
-	background-color: rgb(43, 43, 43);
+	background-color: #002a7e;
 	color: #fff;
-	font-family: work sans;
-	transition-duration: 300ms;
+	border-color: white;
+	transform: scale(1.02);
+	transition-duration: 100ms;
 }
 
 .hire-me:hover,
 :focus {
-	background-color: rgb(43, 43, 43);
+	background-color: #002a7e;
 	color: #fff;
-	font-family: work sans;
+	font-family: "Syne";
 	transition-duration: 300ms;
 }
 
 .mypic {
-	padding-top: 1em;
+	padding-top: 0em;
+	order: -1;
+	width: 80%;
+	max-width: 500px;
+	margin: auto;
+}
+
+.contact-pic-container {
+	/* padding-top: 1em; */
 	order: -1;
 	width: 100%;
-	height: 100%;
 	max-width: 450px;
+}
+.contact-pic {
+	width: 90%;
+	margin: auto;
 }
 
 .con-flex {
@@ -286,7 +318,7 @@ nav a:hover {
 	text-align: center;
 	background-color: rgb(246, 247, 255);
 	color: rgb(73, 73, 73);
-	font-family: work sans;
+	font-family: "Rubik";
 	font-size: 1rem;
 	font-weight: 500;
 	text-decoration: none;
@@ -317,41 +349,46 @@ nav a:hover {
 /* Style the buttons */
 
 .btn {
-	border:0px;
+	border: 0px;
 	/* border-radius: 5px; */
 	outline: none;
-	font-family: work sans;
 	padding: 12px 16px;
-	background-color:rgba(255, 255, 255, 0);
+	background-color: rgba(255, 255, 255, 0);
 	color: rgb(170, 170, 170);
 	cursor: pointer;
 	margin: 0px 3px;
 	font-size: 1em;
+	font-family: "Syne";
 	border-bottom: 2px rgba(255, 255, 255, 0) solid;
 	transition-duration: 100ms;
 }
 
 /* Add a light grey background on mouse-over */
 .btn:hover {
-	background-color: rgb(245, 245, 245);
+	/* background-color: #0c0231; */
+	color: white;
 	transition-duration: 100ms;
 }
 
 .btn.active {
-	background-color: rgba(255, 255, 255, 0);
-	color:black;
-	border-bottom: 4px rgb(0, 0, 230) solid;
+	background-color: transparent;
+	color: white;
+	border-bottom: 4px #3300ff solid;
 	transition-duration: 100ms;
 }
 
 .card {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 	border: 0px rgb(235, 235, 235) solid;
 	display: flex;
-	background-color: white ;
+	background-color: #0c0231;
 	flex-direction: column;
 	border-radius: 0px;
 	overflow: hidden;
 	max-width: 600px;
+	/* border-radius: 10px; */
 	/* position: relative; */
 }
 
@@ -362,20 +399,29 @@ nav a:hover {
 }
 
 .card-content {
-	padding: 1em 2em;
+	padding: 0.5rem 1.5rem 1rem 1.5rem;
 }
 
 .card h2 {
-	font-weight: 600;
+	font-weight: 700;
+	font-size: 1.25rem;
+	color: #cbbffd;
 }
 
 .card h4 {
-	font-weight: 400;
+	font-weight: 600;
+	font-size: 1rem;
 }
 
 .card p {
 	font-size: 1rem;
+	color: #bfbed8;
 }
+
+.card .desc {
+	min-height: 5rem;
+}
+
 .card-link {
 	display: flex;
 	justify-content: flex-end;
@@ -383,8 +429,10 @@ nav a:hover {
 
 .card-link a {
 	text-decoration: none;
-	color: blue;
+	color: #3300ff;
 	font-weight: 500;
+	padding-bottom: 0.2rem;
+	border-bottom: 2px solid #3300ff;
 }
 .card:hover {
 	transform: scale(1.01);
@@ -406,13 +454,14 @@ nav a:hover {
 }
 
 footer {
-	background-color: rgb(246, 247, 255);
+	background-color: #000;
 	padding: 1em 0em;
+	color: #f6f7ff;
 }
 
 footer a {
 	text-decoration: underline;
-	color: rgb(75, 75, 75);
+	color: #f6f7ff;
 }
 .footer-container {
 	padding: 1em 0em;
@@ -441,9 +490,9 @@ footer a {
 
 .footer-right .fab {
 	font-size: 1.5rem;
-	opacity: 0.5;
+	opacity: 0.8;
 	transition: ease all 200ms;
-	color: rgb(85, 96, 117);
+	color: #f6f7ff;
 }
 
 .footer-right .fab:hover {
@@ -451,26 +500,25 @@ footer a {
 	transition: ease all 200ms;
 }
 
-
-.contact-icons{
-	margin-top:2em;
+.contact-icons {
+	margin-top: 2em;
 }
 
-.contact-icons img{
+.contact-icons img {
 	margin: 0em 0.3em;
-	width:1em;
+	width: 1em;
 	height: auto;
 	font-size: 2rem;
 	/* opacity: 0.5; */
 	transition: ease all 200ms;
-	color: rgb(85, 96, 117);	
+	color: rgb(85, 96, 117);
 }
 
-.contact-icons i:hover{
+.contact-icons i:hover {
 	font-size: 2rem;
 	opacity: 1;
 	transition: ease all 200ms;
-	color: black;	
+	color: black;
 }
 
 .headings {
@@ -547,42 +595,53 @@ footer a {
 	justify-content: center;
 }
 
-
-.image-container{
+.image-container {
 	display: grid;
 	margin: auto;
-	margin-top:2em;
+	margin-top: 2em;
 	grid-template-columns: repeat(auto-fit);
 	grid-column-gap: 1em;
 	grid-row-gap: 1em;
 }
 
-.image-container img{
+.image-container img {
 	width: 100%;
-	height:auto;
+	height: auto;
 	filter: drop-shadow(5px 5px 5px rgba(71, 71, 71, 0.178));
 }
 
 .lofi {
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
 }
 
-.next-project{
-	background-color: rgb(246, 247, 255);
+.next-project {
+	background-color: #000;
 	margin: 2em 0em;
 	padding: 2em 2em;
-	border-radius: 16px;
+	border-radius: 8px;
 }
 
-.next-project a{
-	color: rgb(41, 41, 41);
-	text-decoration:none;
+.next-project a {
+	color: #fff;
+	font-weight: 500;
+	text-decoration: none;
 }
 
+.white-text {
+	color: white;
+	/* text-decoration: underline; */
+}
+
+.hey {
+	margin-bottom: 0rem;
+	font-size: 1.5rem;
+}
+
+.header-name {
+	margin-top: 0.5rem;
+}
 
 @media (min-width: 740px) {
-	
 	.navcontainer {
 		margin: auto;
 		padding: 2em 5%;
@@ -607,6 +666,14 @@ footer a {
 		white-space: normal;
 		margin-left: 2em;
 	}
+
+	.projects-button {
+		width: auto;
+	}
+
+	.card h2 {
+		font-size: 1.5rem;
+	}
 }
 
 @media (min-width: 988px) {
@@ -630,22 +697,22 @@ footer a {
 		font-size: 3rem;
 		text-align: left;
 	}
-	
+
 	.intro-content {
 		width: 50%;
 	}
-	
+
 	.mypic {
 		/* border: solid 1px red; */
 		order: 0;
 	}
 
-	.marginTop{
-		margin-top:2em;
+	.marginTop {
+		margin-top: 2em;
 	}
 
-	.btncontainer{
-		text-align:left;
+	.btncontainer {
+		text-align: left;
 	}
 
 	.con-flex {
@@ -718,13 +785,16 @@ footer a {
 	}
 
 	.card-container {
-		margin: none;
-		margin: auto;
+		margin: 0 auto 2rem auto;
 		width: 80%;
 		grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	}
-		
-	.about h1{
-		padding-top: 0em ;
+
+	.card-content {
+		padding: 1rem 2rem 1.5rem 2rem;
+	}
+
+	.about h1 {
+		padding-top: 0em;
 	}
 }
