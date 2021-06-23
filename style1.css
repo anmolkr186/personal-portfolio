@@ -35,6 +35,11 @@ h2 {
 	font-weight: 500;
 }
 
+#edudictive .project-content-container p{
+	line-height: 1.75;
+	font-size: 1.125rem;
+}
+
 p {
 	line-height: 1.5rem;
 	/* color: rgb(88, 88, 88); */
