@@ -75,6 +75,10 @@ a:focus {
 	margin-top: 2em;
 }
 
+.mail-link{
+	color:#fff;
+}
+
 .white-container {
 	background-color: white;
 	padding: 4em 0em;
@@ -434,10 +438,10 @@ nav a:hover {
 
 .card-link a {
 	text-decoration: none;
-	color: #3300ff;
+	color: #cbbffd;
 	font-weight: 500;
 	padding-bottom: 0.2rem;
-	border-bottom: 2px solid #3300ff;
+	border-bottom: 2px solid #cbbffd;
 }
 .card:hover {
 	transform: scale(1.01);
